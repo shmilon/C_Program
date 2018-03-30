@@ -1,0 +1,25 @@
+#include<stdio.h>  
+int main ()
+{
+  
+int num,first,second,third,total,num2;
+  
+printf ("Enter the number:");
+scanf ("%d", &num);
+
+    first = num%10; // 875%10=5;
+    
+    num2 = num/10; // 875/10=87;
+    
+    second = num2%10; // 87%10=7;
+    
+    third = num2/10; // 87/10 = 8;
+    
+    total = first+second+third;
+    
+
+    printf ("Total: %d",total);
+  
+return 0;
+}
+
