@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main ()
+{
+    int even,odd,i,start,endd,count;
+
+    printf("Start From: ");
+    scanf("%d",&start);
+
+    printf("End: ");
+    scanf("%d",&endd);
+
+    for(i=start;i<=endd;i++)
+    {
+        if(i%2==0)
+        {
+            even=even+1;
+            
+        }else{
+            odd=odd+1;
+        }
+    }
+
+    printf("\nTotal Even: %d",even);
+    printf("\nTotal Odd: %d",odd);
+
+    return 0;
+}
+
