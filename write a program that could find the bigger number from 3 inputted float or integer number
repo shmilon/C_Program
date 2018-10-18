@@ -1,0 +1,50 @@
+#include<stdio.h>
+
+int main(){
+
+    float a,b,c;
+
+    printf("Enter first number: ");
+    scanf("%f",&a);
+
+    printf("Enter second number: ");
+    scanf("%f",&b);
+
+    printf("Enter third number: ");
+    scanf("%f",&c);
+
+
+    if(a>b && a>c){
+        printf("%.2f is greater then %.2f and %.2f",a,b,c);
+    }else if(b>a && b>c ){
+        printf("%.2f is greater then %.2f and %.2f",b,a,c);
+    }else if(c>b && c>a ){
+        printf("%.2f is greater then %.2f and %.2f",c,a,b);
+    }else if(a==b && a==c && b==c){
+        printf("Invalid input! Your inputed numbers are Equal.");
+    }else if(a==b ||b==a){
+
+        if(c>a){
+            printf("%2.f is greater then A",c);
+        }else{
+
+            printf("A and B both number is greater then C");
+
+        }
+
+    }else if(a==c || c==a){
+
+         if(b>a){
+            printf("%2.f B is greater then A",b);
+        }else{
+
+            printf("A and C both number are greater then B");
+
+        }
+    }else{
+        printf("B and C is greater than A");
+    }
+
+
+    return 0;
+}
